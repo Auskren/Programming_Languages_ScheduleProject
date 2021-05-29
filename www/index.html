@@ -104,6 +104,11 @@
             fileNameField.textContent = uploadedFileName;
         })
         }
+        eel.expose(printer)
+        function printer(inp){
+            console.log(inp);
+        }
+
         function getCalculationRes(){
             inp = [];
             for(i = 1;i<=4;i++)
@@ -112,10 +117,10 @@
         }
     </script>
 
-<script >
+<script >/*
     document.getElementById("confirmButton").onclick = function () {
         window.location.href = "/main.html";
-    };
+    };*/
 </script>
 </body>
 

@@ -89,7 +89,6 @@ def calculate(courseFileName: str, busyFileName: str, classroomFileName: str, se
     for obj in classroom:
         numberOfRooms += int(obj.number)
 
-    print(numberOfRooms)
     counter = 0
     index = 0
     # while len courses != 0 means every element in that array must be placed a fit position
@@ -143,38 +142,12 @@ def calculate(courseFileName: str, busyFileName: str, classroomFileName: str, se
             index = 0
         if counter == 1000:
             break
+    output = ""
+    for d in days:
+        for obj in d.morning:
+            output+= d.day + ";" + "m;" + obj.instructor + ";" + obj.course + ";" + obj.comp_or_elective + "\n"
 
-    print(days[0].day + "--Morning")
-    for obj in days[0].morning:
-        print(obj.instructor + " " + obj.course + " " + obj.comp_or_elective)
-    print(days[0].day + "--Afternoon")
-    for obj in days[0].afternoon:
-        print(obj.instructor + " " + obj.course + " " + obj.comp_or_elective)
+        for obj in d.afternoon:
+            output+= d.day + ";" + "a;" + obj.instructor + ";" + obj.course + ";" + obj.comp_or_elective + "\n"
 
-    print(days[1].day + "--Morning")
-    for obj in days[1].morning:
-        print(obj.instructor + " " + obj.course + " " + obj.comp_or_elective)
-    print(days[1].day + "--Afternoon")
-    for obj in days[1].afternoon:
-        print(obj.instructor + " " + obj.course + " " + obj.comp_or_elective)
-
-    print(days[2].day + "--Morning")
-    for obj in days[2].morning:
-        print(obj.instructor + " " + obj.course + " " + obj.comp_or_elective)
-    print(days[2].day + "--Afternoon")
-    for obj in days[2].afternoon:
-        print(obj.instructor + " " + obj.course + " " + obj.comp_or_elective)
-
-    print(days[3].day + "--Morning")
-    for obj in days[3].morning:
-        print(obj.instructor + " " + obj.course + " " + obj.comp_or_elective)
-    print(days[3].day + "--Afternoon")
-    for obj in days[3].afternoon:
-        print(obj.instructor + " " + obj.course + " " + obj.comp_or_elective)
-
-    print(days[4].day + "--Morning")
-    for obj in days[4].morning:
-        print(obj.instructor + " " + obj.course + " " + obj.comp_or_elective)
-    print(days[4].day + "--Afternoon")
-    for obj in days[4].afternoon:
-        print(obj.instructor + " " + obj.course + " " + obj.comp_or_elective)
+    eel.printer(output)
