@@ -1,8 +1,10 @@
 import itertools
+import eel
 from classes import *
 from backendFunctions import *
 
 
+@eel.expose
 def calculate(courseFileName: str, busyFileName: str, classroomFileName: str, serviceFileName: str):
     courses = []
     with open(courseFileName) as fp:
