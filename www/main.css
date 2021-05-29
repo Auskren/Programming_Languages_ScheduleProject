@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+* {
+  --dark: #082437;
+  --white: #F6F6F6;
+}
+
+body {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: var(--white);
+  font-family: 'Ubuntu', sans-serif;
+  color: var(--dark);
+}
+
+body .login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .login .left-area {
+  position: relative;
+  width: 60%;
+}
+
+body .login .left-area .img-area {
+  background-image: url(https://images.pexels.com/photos/1038916/pexels-photo-1038916.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+  background-size: cover;
+  height: 100vh;
+  -webkit-filter: drop-shadow(1px 0px 3px black);
+          filter: drop-shadow(1px 0px 3px black);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .login .left-area .img-area .text-area {
+  text-align: center;
+  width: 650px;
+  -webkit-box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(16px);
+          backdrop-filter: blur(16px);
+}
+
+body .login .left-area .img-area .text-area .text {
+  margin: 100px 35px;
+}
+
+body .login .left-area .img-area .text-area .text * {
+  margin: 0;
+}
+
+body .login .left-area .img-area .text-area .text h4 {
+  font-weight: initial;
+  font-size: 1.2rem;
+}
+
+body .login .left-area .img-area .text-area .text h2 {
+  font-size: 3.4rem;
+}
+
+body .login .right-area {
+  width: 40%;
+}
+
+body .login .right-area .top-area {
+  height: 70px;
+  margin: 25px 25px 0 0;
+  position: absolute;
+  right: 0;
+}
+
+body .login .right-area .top-area .logo-area {
+  height: 100%;
+}
+
+body .login .right-area .top-area .logo-area img {
+  height: 100%;
+}
+
+body .login .right-area .content-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .login .right-area .content-area .content {
+  width: 420px;
+}
+
+body .login .right-area .content-area .content .tittle-area h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+body .login .right-area .content-area .content .file-area .file {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 45px 0;
+  border: 1px solid var(--dark);
+  border-radius: 10px;
+  position: relative;
+  height: 40px;
+  overflow: hidden;
+}
+
+body .login .right-area .content-area .content .file-area .file .choose-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .login .right-area .content-area .content .file-area .file .choose-area input {
+  display: none;
+}
+
+body .login .right-area .content-area .content .file-area .file .choose-area input + label {
+  background-color: var(--dark);
+  color: var(--white);
+  cursor: pointer;
+  border-radius: 5px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 8px;
+}
+
+body .login .right-area .content-area .content .file-area .file .choose-area input + label:hover {
+  opacity: 0.8;
+}
+
+body .login .right-area .content-area .content .file-area .file .info-area {
+  margin-left: 15px;
+}
+
+body .login .right-area .content-area .content .file-area .file .info-area p {
+  margin: 0;
+  font-weight: bold;
+}
+
+body .login .right-area .content-area .content .file-area .file .info-area span {
+  position: absolute;
+}
+
+body .login .right-area .content-area .content .button-area button {
+  padding: 13px;
+  background-color: var(--dark);
+  color: var(--white);
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */

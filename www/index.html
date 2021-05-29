@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Planner</title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+    <div class="login">
+        <div class="left-area">
+            <div class="img-area">
+                <div class="text-area">
+                    <div class="text">
+                        <h4>Ankara Yıldırım Beyazıt University</h4>
+                        <h2>Welcome to computer engineering curriculum planner</h2>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="right-area">
+            <div class="top-area">
+                <div class="logo-area">
+                    <img src="img/ankara-yildirim-beyazit-universitesi_logo.png" alt="AYBÜ">
+                </div>
+            </div>
+            <div class="content-area">
+                <div class="content">
+                    <div class="tittle-area">
+                        <h2>Please select your files</h2>
+                    </div>
+
+                    <div class="file-area">
+                        <div class="file">
+                            <div class="choose-area">
+                                <input type="file" id="file-input1">
+                                <label onclick="getFileName(1)" for="file-input1">Choose a file...</label>
+                            </div>
+
+                            <span class="info-area">
+                                <p> Choosen file:</p>
+                                <span id="file-name1">None</span>
+                            </span>
+                        </div>
+                        <div class="file">
+                            <div class="choose-area">
+                                <input type="file" id="file-input2">
+                                <label onclick="getFileName(2)" for="file-input2">Choose a file...</label>
+                            </div>
+
+                            <span class="info-area">
+                                <p> Choosen file:</p>
+                                <span id="file-name2">None</span>
+                            </span>
+                        </div>
+                        <div class="file">
+                            <div class="choose-area">
+                                <input type="file" id="file-input3">
+                                <label onclick="getFileName(3)" for="file-input3">Choose a file...</label>
+                            </div>
+
+                            <span class="info-area">
+                                <p> Choosen file:</p>
+                                <span id="file-name3">None</span>
+                            </span>
+                        </div>
+                                                <div class="file">
+                            <div class="choose-area">
+                                <input type="file" id="file-input4">
+                                <label onclick="getFileName(4)" for="file-input4">Choose a file...</label>
+                            </div>
+
+                            <span class="info-area">
+                                <p> Choosen file:</p>
+                                <span id="file-name4">None</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="button-area" >
+                        <button id="confirmButton" type="button">Confirm</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+        function getFileName(i){
+        let inputFile = document.getElementById("file-input" + i);
+        let fileNameField = document.getElementById("file-name" + i);
+
+        inputFile.addEventListener('change', function (event) {
+            let uploadedFileName = event.target.files[0].name;
+            fileNameField.textContent = uploadedFileName;
+        })
+        }
+    </script>
+
+<script >
+    document.getElementById("confirmButton").onclick = function () {
+        window.location.href = "/main.html";
+    };
+</script>
+</body>
+
+</html>

@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    --dark: #082437;
+    --white: #F6F6F6;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--white);
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--dark);
+
+    .login {
+        display: flex;
+
+        .left-area {
+            position: relative;
+            width: 60%;
+
+            .img-area {
+                background-image: url(https://images.pexels.com/photos/1038916/pexels-photo-1038916.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+                background-size: cover;
+                height: 100vh;
+                filter: drop-shadow(1px 0px 3px black);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+
+                .text-area {
+                    text-align: center;
+                    width: 650px;
+                    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+                    border-radius: 5px;
+                    background-color: rgba(255, 255, 255, .15);
+                    backdrop-filter: blur(16px);
+
+                    .text {
+                        margin: 100px 35px;
+
+                        * {
+                            margin: 0;
+                        }
+
+                        h4 {
+                            font-weight: initial;
+                            font-size: 1.2rem;
+                        }
+
+                        h2 {
+                            font-size: 3.4rem;
+                        }
+                    }
+
+                }
+
+            }
+        }
+
+        .right-area {
+            width: 40%;
+
+            .top-area {
+                height: 70px;
+                margin: 25px 25px 0 0;
+                position: absolute;
+                right: 0;
+
+                .logo-area {
+                    height: 100%;
+
+                    img {
+                        height: 100%;
+                    }
+                }
+            }
+
+            .content-area {
+                display: flex;
+                height: 100vh;
+                align-items: center;
+                justify-content: center;
+
+                .content {
+                    width: 420px;
+
+                    .tittle-area {
+                        h2 {
+                            font-size: 2rem;
+                            margin: 0;
+                        }
+                    }
+                    .file-area{
+                        .file{
+                            display: flex;
+                            margin: 45px 0;
+                            border: 1px solid var(--dark);
+                            border-radius: 10px;
+                            position: relative;
+                            height: 40px;
+                            overflow: hidden;
+                            .choose-area{
+                                display: flex;
+                            input{
+                                display: none;
+                                + label{
+                                    background-color: var(--dark);
+                                    color: var(--white);
+                                    cursor: pointer;
+                                    border-radius: 5px;
+                                    height: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    padding: 0 8px;
+        
+                                }
+                                + label:hover{
+                                    opacity: 0.8;
+
+                                }
+                                
+                            }
+                        }
+                        .info-area{
+                            margin-left: 15px;
+                            p{
+                              margin: 0;
+    font-weight: bold;
+                            }
+                            span{
+                                position: absolute;
+                            }
+                        }
+                    }
+                }
+
+                .button-area{
+
+                    button{
+                        padding: 13px;
+                        background-color: var(--dark);
+                        color: var(--white);
+                        border-radius: 10px;
+                        border: none;
+                        width: 100%;
+                        cursor: pointer;
+                    }
+                }
+
+
+
+                    // .file-area{
+                    //     width: 100%;
+                    //     margin: 30px 0;
+
+                    //     input{
+                    //         color: var(--dark);
+                    //         border: 1px solid var(--dark);
+                    //         padding: 12px 6px;
+                    //         background-color: transparent;
+                    //     }
+                    //     input[type=file]{
+                    //         background-color: red;
+                    //     }
+                        
+            
+        
+                    // }
+
+
+        //             .custom-file-upload {
+        //                 display: block;
+        //                 width: auto;
+        //                 font-size: 16px;
+        //                 margin-top: 30px;
+        
+                   
+                    
+        //             .file-upload-wrapper {
+        //                 position: relative; 
+        //                 margin-bottom: 5px;
+        //                 //border: 1px solid #ccc;
+        //             }
+        //             .file-upload-input {
+        //                 width: 100%;
+        //                 color: var(--dark);
+        //                 font-size: 16px;
+        //                 padding: 11px 17px; 
+        //                 border: 1px solid var(--dark);
+        //                 background-color: transparent;
+        //                 @include transition(all 0.2s ease-in); 
+        //                 float: left; /* IE 9 Fix */
+        //                 &:hover, &:focus { 
+                           
+        //                     outline: none; 
+        //                 }
+        //             }
+        //             .file-upload-button {
+        //                 cursor: pointer; 
+        //                 display: inline-block;
+        //                 font-size: 16px;
+        //                 text-transform: uppercase;
+        //                 padding: 11px 20px; 
+        //                 border: none;
+        //                 margin-left: -1px;  
+        //                 background-color: darken($file-upload-color, 10); 
+                      
+        //                 @include transition(all 0.2s ease-in);
+        //                 &:hover {
+        //                     background-color: darken($file-upload-color, 20);
+        //                 }
+
+      
+
+        //         }
+        //     }
+        // }
+
+        }
+    }
+}
+}
+}
