@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Planner</title>
     <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="/eel.js"></script>
 
 </head>
 
@@ -84,7 +85,7 @@
                     </div>
 
                     <div class="button-area" >
-                        <button id="confirmButton" type="button">Confirm</button>
+                        <button onclick="getCalculationRes()" id="confirmButton" type="button">Confirm</button>
                     </div>
                 </div>
             </div>
@@ -102,6 +103,12 @@
             let uploadedFileName = event.target.files[0].name;
             fileNameField.textContent = uploadedFileName;
         })
+        }
+        function getCalculationRes(){
+            inp = [];
+            for(i = 1;i<=4;i++)
+                inp.push(document.getElementById("file-name" + i).textContent);
+                eel.calculate(inp[0],inp[1],inp[2],inp[3]);
         }
     </script>
 
