@@ -71,7 +71,7 @@
                                 <span id="file-name3">None</span>
                             </span>
                         </div>
-                                                <div class="file">
+                        <div class="file">
                             <div class="choose-area">
                                 <input type="file" id="file-input4">
                                 <label onclick="getFileName(4)" for="file-input4">Choose a file...</label>
@@ -84,7 +84,7 @@
                         </div>
                     </div>
 
-                    <div class="button-area" >
+                    <div class="button-area">
                         <button onclick="getCalculationRes()" id="confirmButton" type="button">Confirm</button>
                     </div>
                 </div>
@@ -95,33 +95,33 @@
 
 
     <script>
-        function getFileName(i){
-        let inputFile = document.getElementById("file-input" + i);
-        let fileNameField = document.getElementById("file-name" + i);
+        function getFileName(i) {
+            let inputFile = document.getElementById("file-input" + i);
+            let fileNameField = document.getElementById("file-name" + i);
 
-        inputFile.addEventListener('change', function (event) {
-            let uploadedFileName = event.target.files[0].name;
-            fileNameField.textContent = uploadedFileName;
-        })
+            inputFile.addEventListener('change', function (event) {
+                let uploadedFileName = event.target.files[0].name;
+                fileNameField.textContent = uploadedFileName;
+            })
         }
         eel.expose(printer)
-        function printer(inp){
+        function printer(inp) {
             console.log(inp);
         }
 
-        function getCalculationRes(){
+        function getCalculationRes() {
             inp = [];
-            for(i = 1;i<=4;i++)
+            for (i = 1; i <= 4; i++)
                 inp.push(document.getElementById("file-name" + i).textContent);
-                eel.calculate(inp[0],inp[1],inp[2],inp[3]);
+            eel.calculate(inp[0], inp[1], inp[2], inp[3]);
         }
     </script>
 
-<script >/*
-    document.getElementById("confirmButton").onclick = function () {
-        window.location.href = "/main.html";
-    };*/
-</script>
+    <script>/*
+document.getElementById("confirmButton").onclick = function () {
+    window.location.href = "/main.html";
+};*/
+    </script>
 </body>
 
 </html>

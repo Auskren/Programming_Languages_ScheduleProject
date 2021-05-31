@@ -165,12 +165,14 @@ body .login .right-area .content-area .content .file-area .file .info-area span 
 }
 
 body .login .right-area .content-area .content .button-area button {
-  padding: 13px;
+  padding: 15px;
   background-color: var(--dark);
   color: var(--white);
   border-radius: 10px;
   border: none;
   width: 100%;
   cursor: pointer;
+  font-size: 17px;
+  font-weight: bolder;
 }
 /*# sourceMappingURL=main.css.map */
