@@ -22,21 +22,25 @@ body {
     min-height: 100vh;
 
     .calendar {
-        width: 90%;
+        width: 1200px;
         display: flex;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
+        @media (max-height:740px) {
+            margin: 100px 0;
+        }
 
-        .left-area {
-            width: 70%;
+        @media (max-width:1250px) {
+           width: 90%;
+        }
+
+  
 
             .calendar-grid {
                 width: 100%;
                 display: grid;
-                // grid-template-columns: repeat(auto-fit, minmax(211px, 1fr));
-                grid-gap: 60px 10px;
                 grid-template-columns: repeat(5, 1fr);
+                @media (max-width:1250px) {
+                    grid-template-columns: repeat(auto-fit, minmax(211px, 1fr));
+                 }
 
                 .day-card {
                     width: 190px;
@@ -48,7 +52,7 @@ body {
                     align-items: center;
                     justify-content: center;
                     position: relative;
-                    margin: 100px 0;
+                    margin: 50px 0;
 
                     .card-top-area {
                         display: flex;
@@ -119,7 +123,7 @@ body {
                             .first {
                                 border-bottom: 3px solid var(--first);
 
-                                p {
+                                * {
                                     color: var(--first);
                                 }
 
@@ -128,7 +132,7 @@ body {
                             .second {
                                 border-bottom: 3px solid var(--second);
 
-                                p {
+                                * {
                                     color: var(--second);
                                 }
                             }
@@ -136,7 +140,7 @@ body {
                             .third {
                                 border-bottom: 3px solid var(--third);
 
-                                p {
+                                *{
                                     color: var(--third);
                                 }
                             }
@@ -144,7 +148,7 @@ body {
                             .fourth {
                                 border-bottom: 3px solid var(--fourth);
 
-                                p {
+                                *{
                                     color: var(--fourth);
                                 }
                             }
@@ -156,114 +160,8 @@ body {
                 }
             }
 
-        }
+      
 
-        .right-area {
-            width: 30%;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-
-            .info-area {
-                width: 400px;
-                height: 590px;
-
-                .info-top-area {
-
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-
-                    .rectangle {
-                        width: 280px;
-                        height: 70px;
-                        background-color: var(--white);
-                        border: none;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        position: absolute;
-                        border-radius: 25px;
-                        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
-                        .info-line {
-                            display: flex;
-                            align-items: center;
-
-                            &.first {
-                                color: var(--first);
-                            }
-
-                            &.second {
-                                color: var(--second);
-                            }
-
-                            &.third {
-                                color: var(--third);
-                            }
-
-                            &.fourth {
-                                color: var(--fourth);
-                            }
-                        }
-
-                        i {
-                            font-size: 20px;
-                            margin-right: 20px;
-                        }
-
-                        h3 {
-                            font-size: 1.5rem;
-                            margin: 0;
-                        }
-                    }
-
-                }
-
-                .info-container {
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    border-radius: 25px;
-
-                    &.first {
-                        background-color: var(--first);
-                    }
-
-                    &.second {
-                        background-color: var(--second);
-                    }
-
-                    &.third {
-                        background-color: var(--third);
-                    }
-
-                    &.fourth {
-                        background-color: var(--fourth);
-                    }
-
-                    .text-area {
-                        width: 85%;
-                        height: 85%;
-                        position: relative;
-                        color: var(--white);
-
-                        p {
-                            margin: 30px 0;
-                            color: var(--white);
-                        }
-
-                        .bottom {
-                            position: absolute;
-                            bottom: 0;
-                            right: 0;
-                        }
-                    }
-                }
-
-            }
-        }
+       
     }
 }
