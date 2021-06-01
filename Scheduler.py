@@ -150,4 +150,4 @@ def calculate(courseFileName: str, busyFileName: str, classroomFileName: str, se
         for obj in d.afternoon:
             output+= d.day + ";" + "a;" + obj.instructor + ";" + obj.course + ";" + obj.comp_or_elective + "\n"
 
-    eel.printer(output)
+    eel.parser(output)
