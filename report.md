@@ -1,3 +1,25 @@
+Ismail Güven---18050111016
+
+Erham Safa Aksoy-19050111058
+
+Aysenur Yeter----18050111024
+
+Melis Gul Yegilmez-19050111072
+
+Zeynep Afat----18050111034
+
+Kadir Basa Berkuk Kaplan—19050111027
+
+to start the project you need to install pytho 3.6 or higher.
+
+if it does not work please install 3.9.
+
+after the installation you need to install the module "eel".
+
+for this please write "pip install eel" to your terminal.
+
+to start the project you need to run mainEel.py 
+
 ![](img/home.png)
 
 ![](img/homepage.png)
