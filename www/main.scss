@@ -19,6 +19,13 @@ body {
             position: relative;
             width: 60%;
 
+            @media (max-width:1350px) {
+                width: 50%;
+            }
+            @media (max-width:900px) {
+                width: 20%;
+            }
+
             .img-area {
                 background-image: url(https://images.pexels.com/photos/1038916/pexels-photo-1038916.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
                 background-size: cover;
@@ -36,6 +43,12 @@ body {
                     border-radius: 5px;
                     background-color: rgba(255, 255, 255, .15);
                     backdrop-filter: blur(16px);
+                    @media (max-width:1350px) {
+                        width: 420px;
+                    }
+                    @media (max-width:900px) {
+                        display: none;
+                    }
 
                     .text {
                         margin: 100px 35px;
@@ -61,6 +74,13 @@ body {
 
         .right-area {
             width: 40%;
+            
+            @media (max-width:1350px) {
+                width: 50%;
+            }
+            @media (max-width:900px) {
+                width: 80%;
+            }
 
             .top-area {
                 height: 70px;
@@ -85,6 +105,9 @@ body {
 
                 .content {
                     width: 420px;
+                    @media (max-height:627px) {
+                        margin-top: 100px;
+                    }
 
                     .tittle-area {
                         h2 {
@@ -100,7 +123,7 @@ body {
                             border: 1px solid var(--dark);
                             border-radius: 10px;
                             position: relative;
-                            height: 40px;
+                            height: 45px;
                             overflow: hidden;
 
                             .choose-area {

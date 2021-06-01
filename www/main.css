@@ -24,6 +24,18 @@ body .login .left-area {
   width: 60%;
 }
 
+@media (max-width: 1350px) {
+  body .login .left-area {
+    width: 50%;
+  }
+}
+
+@media (max-width: 900px) {
+  body .login .left-area {
+    width: 20%;
+  }
+}
+
 body .login .left-area .img-area {
   background-image: url(https://images.pexels.com/photos/1038916/pexels-photo-1038916.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
   background-size: cover;
@@ -52,6 +64,18 @@ body .login .left-area .img-area .text-area {
           backdrop-filter: blur(16px);
 }
 
+@media (max-width: 1350px) {
+  body .login .left-area .img-area .text-area {
+    width: 420px;
+  }
+}
+
+@media (max-width: 900px) {
+  body .login .left-area .img-area .text-area {
+    display: none;
+  }
+}
+
 body .login .left-area .img-area .text-area .text {
   margin: 100px 35px;
 }
@@ -71,6 +95,18 @@ body .login .left-area .img-area .text-area .text h2 {
 
 body .login .right-area {
   width: 40%;
+}
+
+@media (max-width: 1350px) {
+  body .login .right-area {
+    width: 50%;
+  }
+}
+
+@media (max-width: 900px) {
+  body .login .right-area {
+    width: 80%;
+  }
 }
 
 body .login .right-area .top-area {
@@ -105,6 +141,12 @@ body .login .right-area .content-area .content {
   width: 420px;
 }
 
+@media (max-height: 627px) {
+  body .login .right-area .content-area .content {
+    margin-top: 100px;
+  }
+}
+
 body .login .right-area .content-area .content .tittle-area h2 {
   font-size: 2rem;
   margin: 0;
@@ -118,7 +160,7 @@ body .login .right-area .content-area .content .file-area .file {
   border: 1px solid var(--dark);
   border-radius: 10px;
   position: relative;
-  height: 40px;
+  height: 45px;
   overflow: hidden;
 }
 
