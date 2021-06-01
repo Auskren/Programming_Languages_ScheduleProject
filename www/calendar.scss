@@ -105,7 +105,7 @@ body {
                                 width: 140px;
                                 height: 45px;
                                 border-radius: 10px;
-                                display: flex;
+                                display: none;
                                 align-items: center;
                                 justify-content: center;
                                 margin-bottom: 20px;
@@ -123,34 +123,34 @@ body {
                             .first {
                                 border-bottom: 3px solid var(--first);
 
-                                * {
+                                    display: flex;
                                     color: var(--first);
-                                }
+                                
 
                             }
 
                             .second {
                                 border-bottom: 3px solid var(--second);
 
-                                * {
+                                    display: flex;
                                     color: var(--second);
-                                }
+                                
                             }
 
                             .third {
                                 border-bottom: 3px solid var(--third);
 
-                                *{
+                                display: flex;
                                     color: var(--third);
-                                }
+                                
                             }
 
                             .fourth {
                                 border-bottom: 3px solid var(--fourth);
 
-                                *{
+                                    display: flex;
                                     color: var(--fourth);
-                                }
+                            
                             }
 
                         }
